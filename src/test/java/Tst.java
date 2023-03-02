@@ -7,6 +7,7 @@ public class Tst {
     @Test
     public void toBePrinted() {
         System.out.println("Mariam");
+         System.out.println("Nebieridze");
 
     }
 
