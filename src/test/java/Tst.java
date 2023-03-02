@@ -9,6 +9,7 @@ public class Tst {
         System.out.println("Mariam");
          System.out.println("Nebieridze");
         System.out.println("რამე");
+        System.out.println("ისევ რამე");
 
     }
 
