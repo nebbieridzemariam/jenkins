@@ -19,7 +19,7 @@ pipeline {
     }
 stage('Checkout') {
   steps {
-                sh 'git checkout mariamo'
+                sh 'git checkout -b mariamo'
             }
         }
   }
