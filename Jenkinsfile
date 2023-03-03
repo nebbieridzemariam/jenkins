@@ -17,11 +17,13 @@ pipeline {
 
       }
     }
-stage('Checkout') {
-  steps {
-                sh 'git checkout -b mariamo'
-            }
-        }
+
+    stage('Checkout') {
+      steps {
+        sh 'git checkout -b mariamo'
+      }
+    }
+
   }
   tools {
     maven 'Maven 3.9.0'
