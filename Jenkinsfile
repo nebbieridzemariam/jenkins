@@ -18,12 +18,12 @@ pipeline {
       }
     }
 
-    stage('Checkout') {
-      steps {
-        sh 'git checkout -b branch'
-      }
-    }
-
+  stage('Checkout') {
+            steps {
+                checkout scm
+                sh 'git checkout -b mariam'
+            }
+        }
   }
   tools {
     maven 'Maven 3.9.0'
