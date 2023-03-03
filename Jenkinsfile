@@ -21,7 +21,12 @@ pipeline {
     stage('Checkout') {
       steps {
         checkout scm
-        sh 'New-Branch'
+      }
+    }
+
+    stage('') {
+      steps {
+        sh 'git checkout -b branch'
       }
     }
 
