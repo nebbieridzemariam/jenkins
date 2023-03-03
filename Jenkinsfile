@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Functional Test') {
       steps {
-        sh 'clean test'
+        sh '''/opt/homebrew/bin/mvn install
+mvn test clean'''
       }
     }
 
