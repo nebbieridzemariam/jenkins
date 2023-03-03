@@ -20,12 +20,6 @@ pipeline {
 
     stage('Checkout') {
       steps {
-        checkout scm
-      }
-    }
-
-    stage('') {
-      steps {
         sh 'git checkout -b branch'
       }
     }
