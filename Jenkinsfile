@@ -18,8 +18,7 @@ pipeline {
       }
     }
 stage('Checkout') {
-            steps {
-                checkout scm
+  steps {
                 sh 'git checkout mariamo'
             }
         }
