@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Functional Test') {
       steps {
-        bat 'mvn clean test'
+        sh 'mvn clean test'
       }
     }
 
