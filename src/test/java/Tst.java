@@ -11,6 +11,7 @@ public class Tst {
         System.out.println("რამე");
         System.out.println("ისევ რამე");
         System.out.println("ისევ რამე");
+        System.out.println("ისევ რამე");
 
     }
 
