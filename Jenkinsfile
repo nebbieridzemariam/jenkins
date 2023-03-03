@@ -6,15 +6,16 @@ pipeline {
         sh 'mvn clean test'
       }
     }
-
-  }
-  tools {
-    maven 'Maven 3.9.0'
-  }
-  stage('Checkout') {
+    stage('Checkout') {
             steps {
                 checkout scm
                 sh 'git checkout New Branch'
             }
         }
+
+  }
+  tools {
+    maven 'Maven 3.9.0'
+  }
+  
 }
