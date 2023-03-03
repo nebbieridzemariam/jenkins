@@ -12,6 +12,7 @@ public class Tst {
         System.out.println("ისევ რამე");
         System.out.println("ისევ რამე");
         System.out.println("ისევ რამე");
+        System.out.println("ისევ რამე");
 
     }
 
