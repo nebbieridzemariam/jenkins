@@ -11,4 +11,10 @@ pipeline {
   tools {
     maven 'Maven 3.9.0'
   }
+  stage('Checkout') {
+            steps {
+                checkout scm
+                sh 'git checkout "New Branch"'
+            }
+        }
 }
