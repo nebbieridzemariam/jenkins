@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Functional Test') {
       steps {
-        sh 'mvn clean test'
+        sh '''/Users/macbookair/Desktop/MAVEN/apache-maven-3.9.0/bin/mvn install
+mvn clean test'''
       }
     }
 
