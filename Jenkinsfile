@@ -1,11 +1,13 @@
 pipeline {
-  agent any
-  stages {
-    stage('Functional Test') {
-      steps {
-        sh 'clean test'
-      }
+    agent any
+    tools {
+        maven 'Maven 3.9.0'
     }
-
-  }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'mvn clean test'
+            }
+        }
+    }
 }
