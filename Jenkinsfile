@@ -1,11 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Functional Test') {
       steps {
-        sh ' sh \'chmod +x build.sh && ./build.sh\''
-        sh '''mvn clean test
-'''
+        bat 'mvn clean test'
       }
     }
 
