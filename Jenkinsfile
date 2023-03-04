@@ -20,7 +20,7 @@ pipeline {
 
     stage('Checkout') {
       steps {
-        sh 'git checkout -b mariamo'
+        sh 'git checkout -b blueOceanBranch'
       }
     }
 
