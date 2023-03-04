@@ -1,26 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
-      parallel {
-        stage('Build') {
-          steps {
-            sh 'mvn clean test'
-          }
-        }
-
-        stage('Check Mvn Version') {
-          steps {
-            sh 'mvn -version'
-          }
-        }
-
-      }
-    }
-
     stage('Checkout') {
       steps {
-        sh 'git checkout -b blueOceanBranch'
+        sh 'git checkout -b blueOceanBranch1'
       }
     }
 
