@@ -3,13 +3,24 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        sh 'git checkout -b blueOceanBranch1'
+        sh 'git checkout -b blueOceanBranch2'
       }
     }
 
     stage('Build') {
-      steps {
-        sh 'mvn clean test'
+      parallel {
+        stage('Build') {
+          steps {
+            sh 'mvn clean test'
+          }
+        }
+
+        stage('Check MVN') {
+          steps {
+            sh 'mvn -version'
+          }
+        }
+
       }
     }
 
